@@ -80,17 +80,31 @@ pnpm run start:dev
 
 # Frontend (em outro terminal)
 cd frontend
+
 pnpm install
+
 pnpm run dev
-Acessa http://localhost:5173 e pronto.
+
 Estrutura
+
 personal-erp/
-├── frontend/           # Vue 3 + shadcn
-├── backend/            # NestJS
+
+├── client/
+
+   ├── frontend/           # Vue 3 + shadcn
+  
+├── server/
+
+   ├── backend/            # NestJS
+
 ├── docker-compose.yml  # MariaDB
+
 └── README.md           # você está aqui
+
 Cada módulo é independente. Financeiro não depende de Tarefas. Se eu quebrar algo, não quebra tudo.
+
 Roadmap
+
 Não é promessa, é intenção:
 
  Autenticação básica
